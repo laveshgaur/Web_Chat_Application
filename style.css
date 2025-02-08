@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(167, 212, 235);
+    display: flex;
+    background-color: rgb(185, 215, 230);
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+
 }
