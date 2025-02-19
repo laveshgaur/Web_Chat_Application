@@ -18,18 +18,22 @@ body{
     padding: 25px;
     border: 2px solid rgb(209, 148, 148);
     border-width: 5;
+    border-radius: 10px;
     background-color: rgb(130, 182, 226);
 }
 .input-box{
     margin: 2vh;
     padding: 1vh;
-    border: 2px solid rgb(172, 121, 121);
+    /* border: 2px solid rgb(172, 121, 121); */
+    border-radius: 10px;
     width: auto;
     color: rgb(15, 63, 154);
-    background-color: bisque;
+    background-color: rgb(142, 161, 220);
 
 }
 .btn{
     margin-inline: 20px;
     padding-inline: 20px;
+    border-radius: 4px;
+    size: ;
 }
