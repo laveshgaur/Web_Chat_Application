@@ -1,39 +1,106 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     background-color: rgba(23, 155, 159, 0.443);
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+}
 
+.login-box {
+    margin: 3%;
+    padding: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transition: background-color .3s ease, transform .3s ease;
 }
-.form{
-    margin: auto;
-    padding: 25px;
-    border: 2px solid rgb(209, 148, 148);
-    border-width: 5;
-    border-radius: 10px;
-    background-color: rgb(130, 182, 226);
-}
-.input-box{
-    margin: 2vh;
-    padding: 1vh;
-    /* border: 2px solid rgb(172, 121, 121); */
-    border-radius: 10px;
-    width: auto;
-    color: rgb(15, 63, 154);
-    background-color: rgb(142, 161, 220);
 
+.login-box:hover {
+    background-color: #a3c0ef;
+    transform: scale(1.03);
 }
-.btn{
-    margin-inline: 20px;
-    padding-inline: 20px;
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    size: ;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #888;
+}
+
+input:hover {
+    transform: scale(1.01);
+}
+
+.input-box {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3476e0;
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 14px;
+    color: #555;
+}
+
+.remember-forgot label {
+    font-size: 16px;
+    color: #555;
 }
