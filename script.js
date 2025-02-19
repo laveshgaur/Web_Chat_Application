@@ -1,1 +1,1 @@
-alert("Hey this web is only for chatting...")
+// alert("Hey this web is only for chatting...")

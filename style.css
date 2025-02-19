@@ -6,9 +6,30 @@
 
 body{
     display: flex;
-    background-color: rgb(185, 215, 230);
+    background-color: rgba(23, 155, 159, 0.443);
     justify-content:center;
     align-items: center;
     min-height: 100vh;
+    
 
+}
+.form{
+    margin: auto;
+    padding: 25px;
+    border: 2px solid rgb(209, 148, 148);
+    border-width: 5;
+    background-color: rgb(130, 182, 226);
+}
+.input-box{
+    margin: 2vh;
+    padding: 1vh;
+    border: 2px solid rgb(172, 121, 121);
+    width: auto;
+    color: rgb(15, 63, 154);
+    background-color: bisque;
+
+}
+.btn{
+    margin-inline: 20px;
+    padding-inline: 20px;
 }
