@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="chat-body">
+  <div class="chat-container">
+    <div class="chat-sidebar">
+      <div class="sidebar-header">
+        <h2>Chats</h2>
+      </div>
+      
+      <!-- Search user section -->
+      <div class="search-container">
+        <div class="search-wrapper">
+          <input type="text" id="user-search" placeholder="Search user by username" autocomplete="off">
+          <button id="search-btn" class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      
+      <!-- Pending friend requests section -->
+      <div id="pending-requests" class="pending-requests"></div>
+      
+      <div class="users-list" id="users-list">
+        <!-- User list will be populated dynamically -->
+      </div>
+    </div>
+    
+    <div class="chat-main">
+      <div class="chat-header">
+        <div class="chat-title">
+          <i class="fas fa-comments"></i>
+          <h2>Global Chat</h2>
+        </div>
+        <div class="user-info">
+          <div class="user-status">
+            <span class="status-indicator online"></span>
+            <span id="username"></span>
+          </div>
+          <button id="logout-btn" class="btn btn-secondary">
+            <i class="fas fa-sign-out-alt"></i> <span class="send-text">Logout</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be populated dynamically -->
+      </div>
+      
+      <div class="chat-input">
+        <div class="emoji-btn">
+          <i class="far fa-smile"></i>
+        </div>
+        <input type="text" id="message-input" placeholder="Type a message..." autocomplete="off">
+        <button id="send-btn" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> <span class="send-text">Send</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

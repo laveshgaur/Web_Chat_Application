@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Chat App - Login/Register</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="home-body">
+  <!-- Animated background elements -->
+  <div class="animation-wrapper">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+  </div>
+
+  <div class="container">
+    <div class="logo-container">
+      <div class="logo">
+        <i class="fas fa-comments"></i>
+      </div>
+    </div>
+    
+    <div class="form-container">
+      <h1>Welcome to <span class="highlight">Chat App</span></h1>
+      <p class="tagline">Connect and chat with friends in real-time</p>
+      
+      <div class="tabs">
+        <button class="tab active" id="login-tab"><i class="fas fa-sign-in-alt"></i> Login</button>
+        <button class="tab" id="register-tab"><i class="fas fa-user-plus"></i> Register</button>
+      </div>
+      
+      <div id="login-form" class="form">
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="login-email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="login-password" placeholder="Enter your password" required>
+          </div>
+        </div>
+        <button id="login-btn" class="btn btn-primary">
+          <span class="btn-text">Login</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p id="login-error" class="error-message"></p>
+      </div>
+      
+      <div id="register-form" class="form hidden">
+        <div class="form-group">
+          <label for="register-username">Username</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="register-username" placeholder="Choose a username" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="register-email" placeholder="Enter your email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="register-password" placeholder="Choose a password" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="register-confirm-password">Confirm Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <button id="register-btn" class="btn btn-primary">
+          <span class="btn-text">Register</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p id="register-error" class="error-message"></p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>© 2025 Chat App | Secure Real-time Messaging</p>
+    </div>
+  </div>
+  
+  <script src="js/auth.js"></script>
+</body>
+</html>
